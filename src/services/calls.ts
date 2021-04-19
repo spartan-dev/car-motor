@@ -1,4 +1,4 @@
-const URL: string = `http://localhost:5000/`;
+const URL: string = `https://heroku-test-ecb.herokuapp.com/`;
 export interface Service {
   name: string;
   email: string;
@@ -7,7 +7,7 @@ export interface Service {
   partialIdentity: string;
 }
 export const getInitialCars = async () => {
-  const carros = await fetch(`${URL}home`, {
+  const carros = await fetch(`${URL}`, {
     method: "GET",
   });
 
